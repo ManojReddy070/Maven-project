@@ -3,6 +3,7 @@ package pom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 public class ImportCreditreport_Creditheroscore extends login
@@ -58,9 +59,18 @@ public class ImportCreditreport_Creditheroscore extends login
 		public void importChs(String data) throws InterruptedException
 		{
 			String logindata[]=data.split(",");
+			elementvisibility(importauditbtn);
+			Assert.assertTrue(importauditbtn.isEnabled(), "import audit button not exists");
+			System.out.println("import audit button exists");
 			importauditbtn.click();
+			elementvisibility(importreportnowbtn);
+			Assert.assertTrue(importreportnowbtn.isEnabled(), "importreport button not exists");
+			System.out.println("importreport button exists");
 			importreportnowbtn.click();
 			Thread.sleep(5000);
+			elementvisibility(choosesuptpvdrbtn);
+			Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "savebutton not exists");
+			System.out.println("savebutton exists");
 			choosesuptpvdrbtn.click();
 			Chs.click();
 			Thread.sleep(4000);
