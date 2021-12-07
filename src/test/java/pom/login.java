@@ -36,11 +36,23 @@ public class login extends BasePageCrc
 	public void loginScript(String data) throws InterruptedException
 	{
 	String logindata[]=data.split(",");
+	elementvisibility(username);
+	Assert.assertTrue(username.isEnabled(), "username is not exists");
+	System.out.println("username exists");
 	username.sendKeys(logindata[0]);
+	elementvisibility(password);
+	Assert.assertTrue(password.isEnabled(), "password is not exists");
+	System.out.println("password text field exists");
 	password.sendKeys(logindata[1]);
+	elementvisibility(loginbutton);
+	Assert.assertTrue(loginbutton.isEnabled(), "login button is not exists");
+	System.out.println("login button exists");
 	loginbutton.click();
+	elementvisibility(asserthome);
 	Assert.assertTrue(asserthome.isEnabled(), "Homepage");
 	//Assert.assertFalse(login.asserthome.isEnabled(), "Clientpage");
 	System.out.println("Home page is displaying");
+	
+	
 }
 }

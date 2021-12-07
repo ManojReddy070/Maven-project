@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 194.62 s <<< FAILURE! - in TestSuite
-scripts.crc.Crc_Test.CRC[uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flatop63,3944,manojkumarreddy@yopmail.com](1)  Time elapsed: 77.849 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <span class="material-icons down-custom-icon pinkish-grey float-right m-t-4 pointer" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">...</span> is not clickable at point (1256, 611). Other element would receive the click: <span id="cometchat_userstab" class="cometchat_tab" style="right: 1px">...</span>
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'aladmin-HP-EliteBook-840-G2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-38-generic', java.version: '1.8.0_292'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /tmp/.com.google.Chrome.XEigrm}, goog:chromeOptions: {debuggerAddress: localhost:38705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e943f8cd615657d70fe63014e6eb51c6
-	at scripts.crc.Crc_Test.CRC(Crc_Test.java:30)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.619 s - in TestSuite
