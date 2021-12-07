@@ -3,6 +3,7 @@ package pom;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 public class ImportCreditreport_Identityiq extends login
@@ -58,12 +59,27 @@ public class ImportCreditreport_Identityiq extends login
 	public void importidentityiq(String data) throws InterruptedException
 	{
 		String logindata[]=data.split(",");
+		elementvisibility(importauditbtn);
+		Assert.assertTrue(importauditbtn.isEnabled(), "importaudit button not exists");
+		System.out.println("import audit button field exists");
 		importauditbtn.click();
+		elementvisibility(importreportnowbtn);
+		Assert.assertTrue(importreportnowbtn.isEnabled(), "import report now button not exists");
+		System.out.println("import report now button exists");
 		importreportnowbtn.click();
 		Thread.sleep(5000);
+		elementvisibility(choosesuptpvdrbtn);
+		Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support pvrder button not exists");
+		System.out.println("choose support provider button exists");
 		choosesuptpvdrbtn.click();
+		elementvisibility(identityiq);
+		Assert.assertTrue(identityiq.isEnabled(), "identityiq not exists");
+		System.out.println("identityiq exists");
 		identityiq.click();
 		Thread.sleep(4000);
+		elementvisibility(importrunbtn);
+		Assert.assertTrue(importrunbtn.isEnabled(), "importrun button not exists");
+		System.out.println("import run button exists");
 		importrunbtn.click();
 		Thread.sleep(5000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();

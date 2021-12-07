@@ -13,13 +13,39 @@
     <line>
       <![CDATA[pass: element is visible ]]>
     </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[pass: element is visible ]]>
+    </line>
+    <line>
+      <![CDATA[×
+check_circle
+Client profile added successfully]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="20006" started-at="2021-12-06T18:13:45 IST" finished-at="2021-12-06T18:14:05 IST">
+  <suite name="Suite" duration-ms="32528" started-at="2021-12-07T15:52:49 IST" finished-at="2021-12-07T15:53:22 IST">
     <groups>
     </groups>
-    <test name="ChromeTest1-Desktop" duration-ms="20006" started-at="2021-12-06T18:13:45 IST" finished-at="2021-12-06T18:14:05 IST">
+    <test name="ChromeTest1-Desktop" duration-ms="32528" started-at="2021-12-07T15:52:49 IST" finished-at="2021-12-07T15:53:22 IST">
       <class name="scripts.crc.Crc_Test">
-        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="precondition" is-config="true" duration-ms="10382" started-at="2021-12-06T18:13:45 IST" finished-at="2021-12-06T18:13:55 IST">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="precondition" is-config="true" duration-ms="12570" started-at="2021-12-07T15:52:49 IST" finished-at="2021-12-07T15:53:02 IST">
           <params>
             <param index="0">
               <value>
@@ -50,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="CRC(java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="CRC" duration-ms="9549" started-at="2021-12-06T18:13:55 IST" data-provider="logindataset" finished-at="2021-12-06T18:14:05 IST">
+        <test-method status="PASS" signature="CRC(java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="CRC" duration-ms="19887" started-at="2021-12-07T15:53:02 IST" data-provider="logindataset" finished-at="2021-12-07T15:53:22 IST">
           <params>
             <param index="0">
               <value>
@@ -71,9 +97,35 @@
             <line>
               <![CDATA[pass: element is visible ]]>
             </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[pass: element is visible ]]>
+            </line>
+            <line>
+              <![CDATA[×
+check_circle
+Client profile added successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- CRC -->
-        <test-method status="PASS" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="postcondition" is-config="true" duration-ms="2" started-at="2021-12-06T18:14:05 IST" finished-at="2021-12-06T18:14:05 IST">
+        <test-method status="PASS" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="postcondition" is-config="true" duration-ms="2" started-at="2021-12-07T15:53:22 IST" finished-at="2021-12-07T15:53:22 IST">
           <params>
             <param index="0">
               <value>

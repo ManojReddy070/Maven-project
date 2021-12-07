@@ -69,11 +69,14 @@ public class ImportCreditreport_Creditheroscore extends login
 			importreportnowbtn.click();
 			Thread.sleep(5000);
 			elementvisibility(choosesuptpvdrbtn);
-			Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "savebutton not exists");
-			System.out.println("savebutton exists");
+			Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support provider button not exists");
+			System.out.println("choose support provider button exists");
 			choosesuptpvdrbtn.click();
 			Chs.click();
 			Thread.sleep(4000);
+			elementvisibility(importrunbtn);
+			Assert.assertTrue(importrunbtn.isEnabled(), "import run button not exists");
+			System.out.println("import run button exists");
 			importrunbtn.click();
 			Thread.sleep(5000);
 			String mesg = Auditcreatedsucesspopupmsg.getText();
