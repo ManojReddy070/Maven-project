@@ -42,10 +42,11 @@ public class BaseTestCrc implements Autoconstantcrc
 			String email=(String)users.get("email");
 			String usrname=(String)users.get("usrname");
 			String passwor=(String)users.get("passwor");
+			String phonenumber=(String)users.get("phonenumber");
 			String ssn=(String)users.get("ssn");
 			String searchfld=(String)users.get("searchfld");
 			
-			arr[i]=username+","+password+","+firstname+","+lastname+","+email+","+usrname+","+passwor+","+ssn+","+searchfld;
+			arr[i]=username+","+password+","+firstname+","+lastname+","+email+","+usrname+","+passwor+","+phonenumber+","+ssn+","+searchfld;
 		}
 		reader.close();
 		return arr;
