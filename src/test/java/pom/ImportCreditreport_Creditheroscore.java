@@ -72,6 +72,9 @@ public class ImportCreditreport_Creditheroscore extends login
 			Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support provider button not exists");
 			System.out.println("choose support provider button exists");
 			choosesuptpvdrbtn.click();
+			elementvisibility(Chs);
+			Assert.assertTrue(Chs.isEnabled(), "Credit hero score provider not exists");
+			System.out.println("Credit hero score provider exists");
 			Chs.click();
 			Thread.sleep(4000);
 			elementvisibility(importrunbtn);
