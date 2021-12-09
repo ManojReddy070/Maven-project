@@ -57,30 +57,37 @@ public class Addnewclient extends login
 		Assert.assertTrue(assertclient.isEnabled(), "Client tab not exists");
 		System.out.println("Client tab exists");
 	    Clients.click();
+	    
 	    elementvisibility(Addnewclientbutton);
 	    Assert.assertTrue(Addnewclientbutton.isEnabled(), "Addnewclient button not exists");
 	    System.out.println("Addnewclient button exists");
 		Addnewclientbutton.click();
+		
 		elementvisibility(firstname);
 		Assert.assertTrue(firstname.isEnabled(), "firstname text field not exists");
 		System.out.println("firstname text field exists");
 		firstname.sendKeys(logindata[2]);
+		
 		elementvisibility(lastname);
 		Assert.assertTrue(lastname.isEnabled(), "lastname text field not exists");
 		System.out.println("lastname text field exists");
 		lastname.sendKeys(logindata[3]);
+		
 		elementvisibility(email);
 		Assert.assertTrue(email.isEnabled(), "email text field not exists");
 		System.out.println("email text field exists");
 		email.sendKeys(logindata[4]);
+		
 		elementvisibility(Savebutton);
 		Assert.assertTrue(Savebutton.isEnabled(), "savebutton not exists");
 		System.out.println("savebutton exists");
 		Savebutton.click();
+		
 		elementvisibility(Okbutton);
 		Assert.assertTrue(Okbutton.isEnabled(), "Okbutton not exists");
 		System.out.println("Okbutton exists");
 		Okbutton.click();
+		
 		String msg = Clientsucessfullmsg.getText();
 		Reporter.log(msg);	
 	}
