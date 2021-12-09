@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.062 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1,048.216 s <<< FAILURE! - in TestSuite
+scripts.crc.Crc_Test.CRC[uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojkumarreddy@yopmail.com](1)  Time elapsed: 1,031.372 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at scripts.crc.Crc_Test.CRC(Crc_Test.java:35)
+
