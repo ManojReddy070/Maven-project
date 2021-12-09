@@ -41,17 +41,14 @@ public class ClientDeletion extends login
 		System.out.println("search field exists");
 		searchfld.click();
 		searchfld.sendKeys(logindata[19]);
-		Thread.sleep(5000);
 		elementvisibility(searchbtn);
 		Assert.assertTrue(searchbtn.isEnabled(), "search button not exists");
 		System.out.println("search button exists");
 		searchbtn.click();
-		Thread.sleep(5000);
 		elementvisibility(dropdownbtnclient);
 		Assert.assertTrue(dropdownbtnclient.isEnabled(), "dropdown button not exists");
 		System.out.println("drop down button exists");
 		dropdownbtnclient.click();
-		Thread.sleep(5000);
 		elementvisibility(deletebtnclient);
 		Assert.assertTrue(deletebtnclient.isEnabled(), "delete button  not exists");
 		System.out.println("delete button exists");

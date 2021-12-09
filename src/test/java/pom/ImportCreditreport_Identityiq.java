@@ -54,7 +54,7 @@ public class ImportCreditreport_Identityiq extends login
 	public WebElement cancelbtn;	
 	
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
-	public WebElement nextbtn;
+	public WebElement nextbutton;
 	
 	public void importidentityiq(String data) throws InterruptedException
 	{
@@ -99,6 +99,8 @@ public class ImportCreditreport_Identityiq extends login
 		Thread.sleep(5000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
+		Thread.sleep(50000);
+		nextbutton.click();
 	}
 }
 

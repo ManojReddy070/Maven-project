@@ -21,7 +21,7 @@ public class ImportCreditreport_SmartCredit extends login
 	@FindBy(xpath = "(//span[.='Choose Supported Provider'])[5]")
 	public WebElement choosesuptpvdrbtn;
 	
-	@FindBy(xpath = "//li[.='SmartCredit']")
+	@FindBy(xpath = "//li[.='SmartCredit ']")
 	public WebElement SmartCredit;
 	
 	@FindBy(xpath = "//input[@id='auto_vcr_username']")
