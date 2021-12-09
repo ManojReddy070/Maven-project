@@ -131,28 +131,32 @@
                   </a> <!-- CRC(uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flato...) -->
                   <span class="method-name">CRC</span>
                   <span class="parameters">(uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojkumarreddy@yopmail.com)</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8&apos;]&quot;}
   (Session info: chrome=95.0.4638.54)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;aladmin-HP-EliteBook-840-G2&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-38-generic&apos;, java.version: &apos;1.8.0_292&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /tmp/.com.google.Chrome.uHJr8A}, goog:chromeOptions: {debuggerAddress: localhost:37731}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7444316e63934c4dd630aecb4bdaaf4a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /tmp/.com.google.Chrome.TCBtN7}, goog:chromeOptions: {debuggerAddress: localhost:33795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 629cdb0f3a8898c61e9afcdebdff7e25
+*** Element info: {Using=xpath, value=//button[@class=&apos;btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at pom.ClientDeletion.clientdelete(ClientDeletion.java:51)
-	at scripts.crc.Crc_Test.CRC(Crc_Test.java:50)
+	at pom.ImportCreditreport_Identityiq.importidentityiq(ImportCreditreport_Identityiq.java:112)
+	at scripts.crc.Crc_Test.CRC(Crc_Test.java:32)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 39 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -219,12 +223,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CRC')
 data.setCell(0, 2, 'scripts.crc.Crc_Test')
-data.setCell(0, 3, 95069);
+data.setCell(0, 3, 53628);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -249,9 +253,7 @@ return data;
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output">pass: element is visible </span>
-                <span class="reporter-method-output">×
-check_circle
-Client profile added successfully</span>
+                <span class="reporter-method-output"></span>
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output">pass: element is visible </span>
@@ -262,9 +264,6 @@ Client profile added successfully</span>
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output">pass: element is visible </span>
                 <span class="reporter-method-output"></span>
-                <span class="reporter-method-output">pass: element is visible </span>
-                <span class="reporter-method-output">pass: element is visible </span>
-                <span class="reporter-method-output">pass: element is visible </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,11 +290,11 @@ Client profile added successfully</span>
                 <img src="failed.png">
                 </img>
                 <span class="method-name">CRC(uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flato...)</span>
-                <span class="method-start">15445 ms</span>
+                <span class="method-start">8416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postcondition([TestResult name=CRC status=FAILURE method=Crc_Test.CRC(java.lang.String)[pri:0, instance:scripts.cr...)</span>
-                <span class="method-start">110531 ms</span>
+                <span class="method-start">62061 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

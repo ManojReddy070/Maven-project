@@ -61,7 +61,7 @@ public class ImportCreditreport_Samplereport extends login
 //	public WebElement closebutton;
 	
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
-	public WebElement nextbtn;
+	public WebElement nextbutton;
 	
 	public void importSamplereport(String data) throws InterruptedException
 	{
@@ -70,30 +70,34 @@ public class ImportCreditreport_Samplereport extends login
 		Assert.assertTrue(importauditbtn.isEnabled(), "importaudit button not exists");
 		System.out.println("import audit button exists");
 		importauditbtn.click();
+		
 		elementvisibility(importreportnowbtn);
 		Assert.assertTrue(importreportnowbtn.isEnabled(), "import report button not exists");
 		System.out.println("import report button exists");
 		importreportnowbtn.click();
+		
 		Thread.sleep(5000);
 		elementvisibility(choosesuptpvdrbtn);
 		Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support provider button not exists");
 		System.out.println("choose support provider button exists");
 		choosesuptpvdrbtn.click();
+		
 		elementvisibility(samplereport);
 		Assert.assertTrue(samplereport.isEnabled(), "sample report not exists");
 		System.out.println("sample report button exists");
 		samplereport.click();
+		
 		Thread.sleep(4000);
 		elementvisibility(importrunbtn);
 		Assert.assertTrue(importrunbtn.isEnabled(), "import run button not exists");
 		System.out.println("import run button exists");
 		importrunbtn.click();
+		
 		Thread.sleep(5000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
 		Thread.sleep(5000);
-		elementvisibility(closebutton);
-		closebutton.click();
+		nextbutton.click();
 	}
 }
 

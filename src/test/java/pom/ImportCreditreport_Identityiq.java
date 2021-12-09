@@ -63,43 +63,52 @@ public class ImportCreditreport_Identityiq extends login
 		Assert.assertTrue(importauditbtn.isEnabled(), "importaudit button not exists");
 		System.out.println("import audit button field exists");
 		importauditbtn.click();
+		
 		elementvisibility(importreportnowbtn);
 		Assert.assertTrue(importreportnowbtn.isEnabled(), "import report now button not exists");
 		System.out.println("import report now button exists");
 		importreportnowbtn.click();
+		
 		Thread.sleep(5000);
 		elementvisibility(choosesuptpvdrbtn);
 		Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support pvrder button not exists");
 		System.out.println("choose support provider button exists");
 		choosesuptpvdrbtn.click();
+		
 		elementvisibility(identityiq);
 		Assert.assertTrue(identityiq.isEnabled(), "identityiq not exists");
 		System.out.println("identityiq exists");
 		identityiq.click();
+		
 		elementvisibility(usrname);
 		Assert.assertTrue(usrname.isEnabled(), "user name txt field not exists");
 		System.out.println("user name text field exists");
 		usrname.sendKeys(logindata[5]);
+		
 		elementvisibility(passwor);
 		Assert.assertTrue(passwor.isEnabled(), "password text field not exists");
 		System.out.println("password text field exists");
 		passwor.sendKeys(logindata[6]);
+		
 		elementvisibility(phonenum);
 		Assert.assertTrue(phonenum.isEnabled(), "phone number text field not exists");
 		System.out.println("phone number text field exists");
 		phonenum.sendKeys(logindata[7]);
+		
 		elementvisibility(SecurityWord);
 		Assert.assertTrue(SecurityWord.isEnabled(), "SSN not exists");
 		System.out.println("SSN exists");
 		SecurityWord.sendKeys(logindata[8]);
+		
 		elementvisibility(importrunbtn);
 		Assert.assertTrue(importrunbtn.isEnabled(), "importrun button not exists");
 		System.out.println("import run button exists");
 		importrunbtn.click();
+		
 		Thread.sleep(5000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
-		Thread.sleep(50000);
+		Thread.sleep(5000);
 		nextbutton.click();
 	}
 }

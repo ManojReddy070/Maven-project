@@ -54,7 +54,7 @@ public class ImportCreditreport_Creditheroscore extends login
 		public WebElement cancelbtn;	
 		
 		@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
-		public WebElement nextbtn;
+		public WebElement nextbutton;
 		
 		public void importChs(String data) throws InterruptedException
 		{
@@ -63,42 +63,53 @@ public class ImportCreditreport_Creditheroscore extends login
 			Assert.assertTrue(importauditbtn.isEnabled(), "import audit button not exists");
 			System.out.println("import audit button exists");
 			importauditbtn.click();
+			
 			elementvisibility(importreportnowbtn);
 			Assert.assertTrue(importreportnowbtn.isEnabled(), "importreport button not exists");
 			System.out.println("importreport button exists");
 			importreportnowbtn.click();
+			
 			Thread.sleep(5000);
 			elementvisibility(choosesuptpvdrbtn);
 			Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support provider button not exists");
 			System.out.println("choose support provider button exists");
 			choosesuptpvdrbtn.click();
+			
 			elementvisibility(Chs);
 			Assert.assertTrue(Chs.isEnabled(), "Credit hero score provider not exists");
 			System.out.println("Credit hero score provider exists");
 			Chs.click();
+			
 			elementvisibility(usrname);
 			Assert.assertTrue(usrname.isEnabled(), "user name txt field not exists");
 			System.out.println("user name text field exists");
 			usrname.sendKeys(logindata[5]);
+			
 			elementvisibility(passwor);
 			Assert.assertTrue(passwor.isEnabled(), "password text field not exists");
 			System.out.println("password text field exists");
 			passwor.sendKeys(logindata[6]);
+			
 			elementvisibility(phonenum);
 			Assert.assertTrue(phonenum.isEnabled(), "phone number text field not exists");
 			System.out.println("phone number text field exists");
 			phonenum.sendKeys(logindata[7]);
+			
 			elementvisibility(SecurityWord);
 			Assert.assertTrue(SecurityWord.isEnabled(), "SSN not exists");
 			System.out.println("SSN exists");
 			SecurityWord.sendKeys(logindata[8]);
+			
 			elementvisibility(importrunbtn);
 			Assert.assertTrue(importrunbtn.isEnabled(), "import run button not exists");
 			System.out.println("import run button exists");
 			importrunbtn.click();
 			Thread.sleep(5000);
+			
 			String mesg = Auditcreatedsucesspopupmsg.getText();
 			Reporter.log(mesg);
+			Thread.sleep(5000);
+			nextbutton.click();
 	}
 }
 
