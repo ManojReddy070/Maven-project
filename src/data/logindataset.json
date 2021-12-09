@@ -7,11 +7,27 @@
 			"firstname": "Manoj",			
 			"lastname": "Reddy Akkem",			
 			"email": "manojkumarreddy@yopmail.com", 
-			"usrname": "daniel@credit-aid.com", 
-			"passwor": "flatop63",	
-			"phonenumber": "(234) 567-5432",			
-			"ssn": "3944",
+			"IdentityIQusrname": "daniel@credit-aid.com", 
+			"IdentityIQpasswor": "flatop63",	
+			"IdentityIQphonenumber": "(234) 567-5432",			
+			"IdentityIQssn": "3944",
+			"SmartCreditusrname": "daniel@credit-aid.com", 
+			"SmartCreditpasswor": "flatop63",	
+			"SmartCreditphonenumber": "(234) 567-5432",
+			"PrivacyGaurdusrname": "danielrosen", 
+			"PrivacyGaurdpasswor": "flatop63",	
+			"PrivacyGaurdphonenumber": "(234) 567-5432",			
+			"PrivacyGaurdssn": "3944",
+			"MyFreeScoreNowusrname": "dr@credit-aid.com", 
+			"MyFreeScoreNowpasswor": "flatop63",	
+			"MyFreeScoreNowphonenumber": "(234) 567-5432",			
 			"searchfld": "manojkumarreddy@yopmail.com"			
 		}
 			]
 }
+
+
+
+
+
+

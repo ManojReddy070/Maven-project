@@ -40,13 +40,23 @@ public class BaseTestCrc implements Autoconstantcrc
 			String firstname=(String)users.get("firstname");
 			String lastname=(String)users.get("lastname");
 			String email=(String)users.get("email");
-			String usrname=(String)users.get("usrname");
-			String passwor=(String)users.get("passwor");
-			String phonenumber=(String)users.get("phonenumber");
-			String ssn=(String)users.get("ssn");
+			String IdentityIQusrname=(String)users.get("IdentityIQusrname");
+			String IdentityIQpasswor=(String)users.get("IdentityIQpasswor");
+			String IdentityIQphonenumber=(String)users.get("IdentityIQphonenumber");
+			String IdentityIQssn=(String)users.get("IdentityIQssn");
+			String SmartCreditusrname=(String)users.get("SmartCreditusrname");
+			String SmartCreditpasswor=(String)users.get("SmartCreditpasswor");
+			String SmartCreditphonenumber=(String)users.get("SmartCreditphonenumber");
+			String PrivacyGaurdusrname=(String)users.get("PrivacyGaurdusrname");
+			String PrivacyGaurdpasswor=(String)users.get("PrivacyGaurdpasswor");
+			String PrivacyGaurdphonenumber=(String)users.get("PrivacyGaurdphonenumber");
+			String PrivacyGaurdssn=(String)users.get("PrivacyGaurdssn");
+			String MyFreeScoreNowusrname=(String)users.get("MyFreeScoreNowusrname");
+			String MyFreeScoreNowpasswor=(String)users.get("MyFreeScoreNowpasswor");
+			String MyFreeScoreNowphonenumber=(String)users.get("MyFreeScoreNowphonenumber");
 			String searchfld=(String)users.get("searchfld");
 			
-			arr[i]=username+","+password+","+firstname+","+lastname+","+email+","+usrname+","+passwor+","+phonenumber+","+ssn+","+searchfld;
+			arr[i]=username+","+password+","+firstname+","+lastname+","+email+","+IdentityIQusrname+","+IdentityIQpasswor+","+IdentityIQphonenumber+","+IdentityIQssn+","+SmartCreditusrname+","+SmartCreditpasswor+","+SmartCreditphonenumber+","+PrivacyGaurdusrname+","+PrivacyGaurdpasswor+","+PrivacyGaurdphonenumber+","+PrivacyGaurdssn+","+MyFreeScoreNowusrname+","+MyFreeScoreNowpasswor+","+MyFreeScoreNowphonenumber+","+searchfld;
 		}
 		reader.close();
 		return arr;

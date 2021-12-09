@@ -40,7 +40,7 @@ public class ClientDeletion extends login
 		Assert.assertTrue(searchfld.isEnabled(), "search field not exists");
 		System.out.println("search field exists");
 		searchfld.click();
-		searchfld.sendKeys(logindata[8]);
+		searchfld.sendKeys(logindata[19]);
 		Thread.sleep(5000);
 		elementvisibility(searchbtn);
 		Assert.assertTrue(searchbtn.isEnabled(), "search button not exists");
