@@ -1,5 +1,4 @@
 package pom;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,6 +58,12 @@ public class ImportCreditreport_MyfreeScorenow extends login
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
 	public WebElement nextbutton;
 	
+	@FindBy(xpath = "//div[@class='crc-imer-body']")
+	public WebElement Errormessage;
+	
+	@FindBy(xpath = "//p[text()=' Encountered an error when importing']")
+	public WebElement Encounteredmessage;
+	
 	public void importMyfreescorenow(String data) throws InterruptedException
 	{
 		String logindata[]=data.split(",");
@@ -112,7 +117,13 @@ public class ImportCreditreport_MyfreeScorenow extends login
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
 		
-		Thread.sleep(5000);
-		nextbutton.click();
+		elementvisibility(Encounteredmessage);
+		if(Encounteredmessage.isDisplayed())
+		{
+			System.out.println(Errormessage.getText());
+			
+		}
+//		Thread.sleep(80000);
+//		nextbutton.click();
 	}
 }

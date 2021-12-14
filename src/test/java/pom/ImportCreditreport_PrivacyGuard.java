@@ -59,6 +59,12 @@ public class ImportCreditreport_PrivacyGuard extends login
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
 	public WebElement nextbutton;
 	
+	@FindBy(xpath = "//div[@class='crc-imer-body']")
+	public WebElement Errormessage;
+	
+	@FindBy(xpath = "//p[text()=' Encountered an error when importing']")
+	public WebElement Encounteredmessage;
+	
 	public void importPrivacyGuard(String data) throws InterruptedException
 	{
 		String logindata[]=data.split(",");
@@ -111,6 +117,13 @@ public class ImportCreditreport_PrivacyGuard extends login
 		Thread.sleep(5000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
+		
+		elementvisibility(Encounteredmessage);
+		if(Encounteredmessage.isDisplayed())
+		{
+			System.out.println(Errormessage.getText());
+		}
+		
 		Thread.sleep(5000);
 		nextbutton.click();
 	}

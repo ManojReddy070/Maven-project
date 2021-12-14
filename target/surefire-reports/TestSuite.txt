@@ -1,17 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.968 s <<< FAILURE! - in TestSuite
-scripts.crc.Crc_Test.CRC[uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojkumarreddy@yopmail.com](1)  Time elapsed: 53.611 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']"}
-  (Session info: chrome=95.0.4638.54)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'aladmin-HP-EliteBook-840-G2', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-38-generic', java.version: '1.8.0_292'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /tmp/.com.google.Chrome.TCBtN7}, goog:chromeOptions: {debuggerAddress: localhost:33795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 629cdb0f3a8898c61e9afcdebdff7e25
-*** Element info: {Using=xpath, value=//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']}
-	at scripts.crc.Crc_Test.CRC(Crc_Test.java:32)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.133 s - in TestSuite

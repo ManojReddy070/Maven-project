@@ -28,8 +28,8 @@ public class Crc_Test extends BaseTestCrc
 //		ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
 //		importSamplereport.importSamplereport(data);
 		
-		ImportCreditreport_Identityiq importidentityiq=new ImportCreditreport_Identityiq (driver);
-		importidentityiq.importidentityiq(data);
+//		ImportCreditreport_Identityiq importidentityiq=new ImportCreditreport_Identityiq (driver);
+//		importidentityiq.importidentityiq(data);
 
 //		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
 //		importPrivacyguard.importPrivacyGuard(data);
@@ -40,14 +40,14 @@ public class Crc_Test extends BaseTestCrc
 //		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
 //		importMyfreescorenow.importMyfreescorenow(data);
 
-//		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
-//		importSmartcredit.importSmartCredit(data);
+		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
+		importSmartcredit.importSmartCredit(data);
 
 //		ImportCreditreport_Creditheroscore importCreditheroscore=new ImportCreditreport_Creditheroscore (driver);
 //		importCreditheroscore.importChs(data);
 		
-		ClientDeletion  clientdelete=new ClientDeletion (driver);
-		clientdelete.clientdelete(data);
+//		ClientDeletion  clientdelete=new ClientDeletion (driver);
+//		clientdelete.clientdelete(data);
 	}
 }
 

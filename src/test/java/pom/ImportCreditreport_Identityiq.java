@@ -105,10 +105,11 @@ public class ImportCreditreport_Identityiq extends login
 		System.out.println("import run button exists");
 		importrunbtn.click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(80000);
 		String mesg = Auditcreatedsucesspopupmsg.getText();
 		Reporter.log(mesg);
 		Thread.sleep(5000);
+		elementvisibility(nextbutton);
 		nextbutton.click();
 	}
 }
