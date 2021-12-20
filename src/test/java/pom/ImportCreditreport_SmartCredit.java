@@ -15,7 +15,7 @@ public class ImportCreditreport_SmartCredit extends login
 	@FindBy(xpath = "//a[@class='green-btn-lined2 inline-block text-center h-40 p-t-7 m-r-24 green-bg text-white']")
 	public WebElement importauditbtn;
 	
-	@FindBy(xpath = "//a[@class='green-btn et-padding btnsubmit']")
+	@FindBy(xpath = "//a[@class='green-btn et-padding btnsubmit h-40 p-t-7']")
 	public WebElement importreportnowbtn;
 	
 	@FindBy(xpath = "(//span[.='Choose Supported Provider'])[5]")
@@ -54,7 +54,7 @@ public class ImportCreditreport_SmartCredit extends login
 	@FindBy(xpath = "(//a[@class='modal-close-text blue'])[2]")
 	public WebElement cancelbtn;	
 	
-	@FindBy(xpath = "(//div[@class='modal-header'])[14]/.//button[.='×']/.")
+	@FindBy(xpath = "(//button[@class='close'])[14]")
 	public WebElement closebutton;
 	
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
@@ -108,7 +108,7 @@ public class ImportCreditreport_SmartCredit extends login
 //		elementvisibility(SecurityWord);
 //		Assert.assertTrue(SecurityWord.isEnabled(), "SSN not exists");
 //		System.out.println("SSN exists");
-//		SecurityWord.sendKeys(logindata[8]);
+//		SecurityWord.sendKeys(logindata[0]);
 		
 		elementvisibility(importrunbtn);
 		Assert.assertTrue(importrunbtn.isEnabled(), "import run button not exists");
@@ -123,8 +123,9 @@ public class ImportCreditreport_SmartCredit extends login
 		if(Encounteredmessage.isDisplayed())
 		{
 			System.out.println(Errormessage.getText());
+			Thread.sleep(5000);
+			closebutton.click();
 		}
-		
 //		Thread.sleep(5000);
 //		nextbutton.click();
 	}

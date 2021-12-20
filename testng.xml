@@ -7,6 +7,7 @@
   <parameter name="WindowSize" value="--window-size=1600,900"></parameter><!-- Desktop Resolution -->
    <parameter name="Execution-Type" value="headless"></parameter>
     <parameter name="browser" value="chrome"></parameter>
+    <parameter name="email" value="manojreddy15@yopmail.com"></parameter>
     <classes>
       <class name="scripts.crc.Crc_Test"/>
     </classes>

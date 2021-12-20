@@ -2,6 +2,7 @@ package pom;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
@@ -34,14 +35,13 @@ public class ClientDeletion extends login
 	
 	public void clientdelete(String data) throws InterruptedException
 	{
-		String logindata[]=data.split(",");
+//		String logindata[]=data.split(",");
 		Clients.click();
 		elementvisibility(searchfld);
 		Assert.assertTrue(searchfld.isEnabled(), "search field not exists");
 		System.out.println("search field exists");
 		searchfld.click();
-		
-		searchfld.sendKeys(logindata[19]);
+		searchfld.sendKeys(data);
 		
 		elementvisibility(searchbtn);
 		Assert.assertTrue(searchbtn.isEnabled(), "search button not exists");
@@ -51,21 +51,22 @@ public class ClientDeletion extends login
 		elementvisibility(dropdownbtnclient);
 		Assert.assertTrue(dropdownbtnclient.isEnabled(), "dropdown button not exists");
 		System.out.println("drop down button exists");
-		Thread.sleep(5000);
+		Thread.sleep(30000);
 		dropdownbtnclient.click();
 		
 		elementvisibility(deletebtnclient);
 		Assert.assertTrue(deletebtnclient.isEnabled(), "delete button  not exists");
 		System.out.println("delete button exists");
+		Thread.sleep(5000);
 		deletebtnclient.click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 		deleteclient.click();
 		
-		Thread.sleep(5000);
 		elementvisibility(Home);
 		Assert.assertTrue(Home.isEnabled(), "Home page not exists");
 		System.out.println("Home page exists");
+		Thread.sleep(8000);
 		Home.click();
 	}
 

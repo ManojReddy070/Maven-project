@@ -64,18 +64,15 @@ Client profile added successfully]]>
       <![CDATA[pass: element is visible ]]>
     </line>
     <line>
-      <![CDATA[]]>
-    </line>
-    <line>
       <![CDATA[pass: element is visible ]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="61549" started-at="2021-12-14T13:17:06 IST" finished-at="2021-12-14T13:18:07 IST">
+  <suite name="Suite" duration-ms="45818" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:46:12 IST">
     <groups>
     </groups>
-    <test name="ChromeTest1-Desktop" duration-ms="61549" started-at="2021-12-14T13:17:06 IST" finished-at="2021-12-14T13:18:07 IST">
+    <test name="ChromeTest1-Desktop" duration-ms="45818" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:46:12 IST">
       <class name="scripts.crc.Crc_Test">
-        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="precondition" is-config="true" duration-ms="19425" started-at="2021-12-14T13:17:06 IST" finished-at="2021-12-14T13:17:25 IST">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@32709393]" name="precondition" is-config="true" duration-ms="9720" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:45:36 IST">
           <params>
             <param index="0">
               <value>
@@ -106,11 +103,11 @@ Client profile added successfully]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="CRC(java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="CRC" duration-ms="42065" started-at="2021-12-14T13:17:25 IST" data-provider="logindataset" finished-at="2021-12-14T13:18:07 IST">
+        <test-method status="PASS" signature="CRCMyfrescnow(java.lang.String)[pri:3, instance:scripts.crc.Crc_Test@32709393]" name="CRCMyfrescnow" duration-ms="36027" started-at="2021-12-17T17:45:36 IST" data-provider="logindataset" finished-at="2021-12-17T17:46:12 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,Reddy Akkem,manojkumarreddy@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojkumarreddy@yopmail.com]]>
+                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15]]>
               </value>
             </param>
           </params>
@@ -178,18 +175,15 @@ Client profile added successfully]]>
               <![CDATA[pass: element is visible ]]>
             </line>
             <line>
-              <![CDATA[]]>
-            </line>
-            <line>
               <![CDATA[pass: element is visible ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CRC -->
-        <test-method status="PASS" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@627551fb]" name="postcondition" is-config="true" duration-ms="1" started-at="2021-12-14T13:18:07 IST" finished-at="2021-12-14T13:18:07 IST">
+        </test-method> <!-- CRCMyfrescnow -->
+        <test-method status="PASS" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@32709393]" name="postcondition" is-config="true" duration-ms="2" started-at="2021-12-17T17:46:12 IST" finished-at="2021-12-17T17:46:12 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CRC status=SUCCESS method=Crc_Test.CRC(java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@627551fb] output=pass: element is visible ]]]>
+                <![CDATA[[TestResult name=CRCMyfrescnow status=SUCCESS method=Crc_Test.CRCMyfrescnow(java.lang.String)[pri:3, instance:scripts.crc.Crc_Test@32709393] output=pass: element is visible ]]]>
               </value>
             </param>
           </params>

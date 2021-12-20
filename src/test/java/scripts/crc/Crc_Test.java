@@ -1,6 +1,8 @@
 package scripts.crc;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import generic.BaseTestCrc;
 import pom.Addnewclient;
@@ -16,38 +18,97 @@ import pom.login;
 
 public class Crc_Test extends BaseTestCrc
 {
-	@Test(dataProvider="logindataset")
-	public void CRC(String data) throws InterruptedException
-	{
-		login login=new login (driver);
-		login.loginScript(data);
-		
-		Addnewclient Addclient=new Addnewclient (driver);
-		Addclient.Addclient(data);
-		
+//	@Test(dataProvider="logindataset",priority = 0)
+//	public void CRC(String data) throws InterruptedException
+//	{
+//		login login=new login (driver);
+//		login.loginScript(data);
+//		
+//		Addnewclient Addclient=new Addnewclient (driver);
+//		Addclient.Addclient(data);
+//		
 //		ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
 //		importSamplereport.importSamplereport(data);
-		
-//		ImportCreditreport_Identityiq importidentityiq=new ImportCreditreport_Identityiq (driver);
-//		importidentityiq.importidentityiq(data);
+//	}
 
-//		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
-//		importPrivacyguard.importPrivacyGuard(data);
+//	@Test(dataProvider="logindataset",priority = 1)
+		public void CRCIq(String data1) throws InterruptedException
+		{
+			login login=new login (driver);
+			login.loginScript(data1);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data1);
+		
+		ImportCreditreport_Identityiq importidentityiq=new ImportCreditreport_Identityiq (driver);
+		importidentityiq.importidentityiq(data1);
+		
+		}
+
+//		@Test(dataProvider="logindataset",priority = 5)
+		public void CRCPrgud(String data2) throws InterruptedException
+		{
+			login login=new login (driver);
+			login.loginScript(data2);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data2);
+		
+		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
+		importPrivacyguard.importPrivacyGuard(data2);
+
+		}
 	
-//		ImportCreditreport_MyScoreIQ importMyscoreiq=new ImportCreditreport_MyScoreIQ (driver);
-//		importMyscoreiq.importMyScoreIQ(data);
+//		@Test(dataProvider="logindataset",priority = 2)
+		public void CRCMysciq(String data3) throws InterruptedException
+		{
+			login login=new login (driver);
+			login.loginScript(data3);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data3);
 		
-//		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
-//		importMyfreescorenow.importMyfreescorenow(data);
-
+		ImportCreditreport_MyScoreIQ importMyscoreiq=new ImportCreditreport_MyScoreIQ (driver);
+		importMyscoreiq.importMyScoreIQ(data3);
+		
+		}
+		@Test(dataProvider="logindataset",priority = 3)
+		public void CRCMyfrescnow(String data4) throws InterruptedException
+		{
+			login login=new login (driver);
+			login.loginScript(data4);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data4);
+			
+		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
+		importMyfreescorenow.importMyfreescorenow(data4);
+		
+		}
+		
+//		@Test(dataProvider="logindataset",priority = 4)
+		public void CRC1(String data5) throws InterruptedException
+		{
+			login login=new login (driver);
+			login.loginScript(data5);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data5);
+			
 		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
-		importSmartcredit.importSmartCredit(data);
+		importSmartcredit.importSmartCredit(data5);
 
+		}
 //		ImportCreditreport_Creditheroscore importCreditheroscore=new ImportCreditreport_Creditheroscore (driver);
 //		importCreditheroscore.importChs(data);
-		
+
+//	@AfterMethod
+//	@Parameters("email")
+//	public void clientdelet(String data) throws InterruptedException 
+//	{
 //		ClientDeletion  clientdelete=new ClientDeletion (driver);
 //		clientdelete.clientdelete(data);
-	}
+//	}
+	
 }
 

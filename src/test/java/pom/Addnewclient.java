@@ -1,5 +1,9 @@
 package pom;
 
+import java.time.LocalDateTime;
+
+import javax.print.attribute.standard.DateTimeAtCompleted;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,6 +26,9 @@ public class Addnewclient extends login
 	
 	@FindBy(xpath = "//input[@id='lname']")
 	public WebElement lastname;
+	
+	@FindBy(xpath = "//input[@id='chknoemail']")
+	public WebElement EmailCheckbox;
 	
 	@FindBy(xpath = "//input[@id='email']")
 	public WebElement email;
@@ -76,7 +83,11 @@ public class Addnewclient extends login
 		elementvisibility(email);
 		Assert.assertTrue(email.isEnabled(), "email text field not exists");
 		System.out.println("email text field exists");
-		email.sendKeys(logindata[4]);
+		LocalDateTime t= LocalDateTime.now();
+		System.out.println(t);
+		email.sendKeys(logindata[4]+t+"@yopmail.com");
+		
+//		EmailCheckbox.click();
 		
 		elementvisibility(Savebutton);
 		Assert.assertTrue(Savebutton.isEnabled(), "savebutton not exists");

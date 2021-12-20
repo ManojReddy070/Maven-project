@@ -43,7 +43,7 @@ public class ImportCreditreport_MyfreeScorenow extends login
 	@FindBy(xpath = "//div[@id='flashmessage']")
 	public WebElement Auditcreatedsucesspopupmsg;
 	
-	@FindBy(xpath = "(//button[@class='close'])[11]")
+	@FindBy(xpath = "(//button[@class='close'])[14]")
 	public WebElement reportclosebutton;
 	
 	@FindBy(xpath = "(//a[@id='auto_btnsubmit_without_pending'])[2]")
@@ -54,6 +54,9 @@ public class ImportCreditreport_MyfreeScorenow extends login
 	
 	@FindBy(xpath = "(//div[@class='modal-header'])[14]/.//button[.='×']/.")
 	public WebElement closebutton;
+	
+	@FindBy(xpath = "//a[@class='m-r-20 cancel']")
+	public WebElement dontsavebutton;
 	
 	@FindBy(xpath = "//button[@class='btn green-btn padding-btn3 waves-effect waves-light h-40 p-t-b-8']")
 	public WebElement nextbutton;
@@ -76,7 +79,6 @@ public class ImportCreditreport_MyfreeScorenow extends login
 		Assert.assertTrue(importreportnowbtn.isEnabled(), "import report button not exists");
 		System.out.println("import report button exists");
 		importreportnowbtn.click();
-		Thread.sleep(5000);
 		
 		elementvisibility(choosesuptpvdrbtn);
 		Assert.assertTrue(choosesuptpvdrbtn.isEnabled(), "choose support provider button not exists");
@@ -113,16 +115,19 @@ public class ImportCreditreport_MyfreeScorenow extends login
 		System.out.println("import run button exists");
 		importrunbtn.click();
 		
-		Thread.sleep(5000);
-		String mesg = Auditcreatedsucesspopupmsg.getText();
-		Reporter.log(mesg);
+//		Thread.sleep(5000);
+//		String mesg = Auditcreatedsucesspopupmsg.getText();
+//		Reporter.log(mesg);
 		
 		elementvisibility(Encounteredmessage);
 		if(Encounteredmessage.isDisplayed())
 		{
 			System.out.println(Errormessage.getText());
-			
+			reportclosebutton.click();
+			Thread.sleep(3000);
+			dontsavebutton.click();
 		}
+		
 //		Thread.sleep(80000);
 //		nextbutton.click();
 	}

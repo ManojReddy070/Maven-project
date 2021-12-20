@@ -7,12 +7,13 @@
     <parameter name="Execution-Type" value="headless"/>
     <parameter name="url" value="https://ui-test.creditrepaircloud.com/"/>
     <parameter name="notifications" value="--disable-notifications"/>
+    <parameter name="email" value="manojreddy15@yopmail.com"/>
     <classes>
       <class name="scripts.crc.Crc_Test">
         <methods>
           <include name="postcondition"/>
-          <include name="CRC" invocation-numbers="0"/>
           <include name="precondition"/>
+          <include name="CRCMyfrescnow" invocation-numbers="0"/>
         </methods>
       </class> <!-- scripts.crc.Crc_Test -->
     </classes>
