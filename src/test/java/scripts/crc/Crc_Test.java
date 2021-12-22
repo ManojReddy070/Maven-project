@@ -30,6 +30,19 @@ public class Crc_Test extends BaseTestCrc
 //		ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
 //		importSamplereport.importSamplereport(data);
 //	}
+	
+	@Test(dataProvider="logindataset",priority = 1)
+	public void CRCSamplereport(String data1) throws InterruptedException
+	{
+		login login=new login (driver);
+		login.loginScript(data1);
+		
+		Addnewclient Addclient=new Addnewclient (driver);
+		Addclient.Addclient(data1);
+	
+	ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
+	importSamplereport.importSamplereport(data1);
+	}
 
 //	@Test(dataProvider="logindataset",priority = 1)
 		public void CRCIq(String data1) throws InterruptedException
@@ -72,7 +85,7 @@ public class Crc_Test extends BaseTestCrc
 		importMyscoreiq.importMyScoreIQ(data3);
 		
 		}
-		@Test(dataProvider="logindataset",priority = 3)
+//		@Test(dataProvider="logindataset",priority = 3)
 		public void CRCMyfrescnow(String data4) throws InterruptedException
 		{
 			login login=new login (driver);

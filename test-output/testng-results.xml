@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="5" failed="0" ignored="0" total="5" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="130" started-at="2021-12-16T14:43:40 IST" finished-at="2021-12-16T14:43:40 IST">
+  <suite name="Default suite" duration-ms="197" started-at="2021-12-21T14:41:07 IST" finished-at="2021-12-21T14:41:07 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="130" started-at="2021-12-16T14:43:40 IST" finished-at="2021-12-16T14:43:40 IST">
+    <test name="Default test" duration-ms="197" started-at="2021-12-21T14:41:07 IST" finished-at="2021-12-21T14:41:07 IST">
       <class name="scripts.crc.Crc_Test">
-        <test-method status="FAIL" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="precondition" is-config="true" duration-ms="-1639646020293" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="FAIL" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@544a2ea6]" name="precondition" is-config="true" duration-ms="-1640077867459" started-at="2021-12-21T14:41:07 IST" finished-at="1970-01-01T05:30:00 IST">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
+in /tmp/testng-eclipse--1524649287/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
+in /tmp/testng-eclipse--1524649287/testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:270)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 at org.testng.internal.Parameters.createParameters(Parameters.java:700)
@@ -53,11 +53,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="SKIP" signature="CRCIq(java.lang.String)[pri:1, instance:scripts.crc.Crc_Test@43738a82]" name="CRCIq" duration-ms="0" started-at="2021-12-16T14:43:40 IST" data-provider="logindataset" finished-at="2021-12-16T14:43:40 IST">
+        <test-method status="SKIP" signature="CRCSamplereport(java.lang.String)[pri:1, instance:scripts.crc.Crc_Test@544a2ea6]" name="CRCSamplereport" duration-ms="0" started-at="2021-12-21T14:41:07 IST" data-provider="logindataset" finished-at="2021-12-21T14:41:07 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy15@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15@yopmail.com]]>
+                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15]]>
               </value>
             </param>
           </params>
@@ -65,12 +65,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <message>
               <![CDATA[
 Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
+in /tmp/testng-eclipse--1524649287/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
+in /tmp/testng-eclipse--1524649287/testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:270)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
 at org.testng.internal.Parameters.createParameters(Parameters.java:700)
@@ -105,256 +105,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CRCIq -->
-        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="postcondition" is-config="true" duration-ms="-1639646020315" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postcondition -->
-        <test-method status="SKIP" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="precondition" is-config="true" duration-ms="-1639646020320" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="SKIP" signature="CRCMysciq(java.lang.String)[pri:2, instance:scripts.crc.Crc_Test@43738a82]" name="CRCMysciq" duration-ms="0" started-at="2021-12-16T14:43:40 IST" data-provider="logindataset" finished-at="2021-12-16T14:43:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy15@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15@yopmail.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRCMysciq -->
-        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="postcondition" is-config="true" duration-ms="-1639646020329" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postcondition -->
-        <test-method status="SKIP" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="precondition" is-config="true" duration-ms="-1639646020332" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="SKIP" signature="CRCMyfrescnow(java.lang.String)[pri:3, instance:scripts.crc.Crc_Test@43738a82]" name="CRCMyfrescnow" duration-ms="0" started-at="2021-12-16T14:43:40 IST" data-provider="logindataset" finished-at="2021-12-16T14:43:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy15@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15@yopmail.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRCMyfrescnow -->
-        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="postcondition" is-config="true" duration-ms="-1639646020339" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postcondition -->
-        <test-method status="SKIP" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="precondition" is-config="true" duration-ms="-1639646020342" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="SKIP" signature="CRC1(java.lang.String)[pri:4, instance:scripts.crc.Crc_Test@43738a82]" name="CRC1" duration-ms="0" started-at="2021-12-16T14:43:40 IST" data-provider="logindataset" finished-at="2021-12-16T14:43:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy15@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15@yopmail.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRC1 -->
-        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="postcondition" is-config="true" duration-ms="-1639646020347" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postcondition -->
-        <test-method status="SKIP" signature="precondition(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="precondition" is-config="true" duration-ms="-1639646020351" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="SKIP" signature="CRCPrgud(java.lang.String)[pri:5, instance:scripts.crc.Crc_Test@43738a82]" name="CRCPrgud" duration-ms="0" started-at="2021-12-16T14:43:40 IST" data-provider="logindataset" finished-at="2021-12-16T14:43:40 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy15@yopmail.com,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15@yopmail.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method precondition but has not been marked @Optional or defined
-in /tmp/testng-eclipse--254543147/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CRCPrgud -->
-        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@43738a82]" name="postcondition" is-config="true" duration-ms="-1639646020358" started-at="2021-12-16T14:43:40 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- CRCSamplereport -->
+        <test-method status="SKIP" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@544a2ea6]" name="postcondition" is-config="true" duration-ms="-1640077867475" started-at="2021-12-21T14:41:07 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postcondition -->
       </class> <!-- scripts.crc.Crc_Test -->
+      <class name="ExtentReportListener.Extentreporter">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:ExtentReportListener.Extentreporter@289d1c02]" name="setExtent" is-config="true" duration-ms="126" started-at="2021-12-21T14:41:07 IST" finished-at="2021-12-21T14:41:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:ExtentReportListener.Extentreporter@289d1c02]" name="endReport" is-config="true" duration-ms="2" started-at="2021-12-21T14:41:07 IST" finished-at="2021-12-21T14:41:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- ExtentReportListener.Extentreporter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

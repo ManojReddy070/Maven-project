@@ -1,196 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[×
-check_circle
-Client profile added successfully]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
-    <line>
-      <![CDATA[pass: element is visible ]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="45818" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:46:12 IST">
+  <suite name="Suite" duration-ms="140" started-at="2021-12-21T14:41:26 IST" finished-at="2021-12-21T14:41:26 IST">
     <groups>
     </groups>
-    <test name="ChromeTest1-Desktop" duration-ms="45818" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:46:12 IST">
-      <class name="scripts.crc.Crc_Test">
-        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@32709393]" name="precondition" is-config="true" duration-ms="9720" started-at="2021-12-17T17:45:26 IST" finished-at="2021-12-17T17:45:36 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://ui-test.creditrepaircloud.com/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[--window-size=1600,900]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[headless]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[--disable-notifications]]>
-              </value>
-            </param>
-          </params>
+    <test name="ChromeTest1-Desktop" duration-ms="140" started-at="2021-12-21T14:41:26 IST" finished-at="2021-12-21T14:41:26 IST">
+      <class name="ExtentReportListener.Extentreporter">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:ExtentReportListener.Extentreporter@4b4523f8]" name="setExtent" is-config="true" duration-ms="125" started-at="2021-12-21T14:41:26 IST" finished-at="2021-12-21T14:41:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- precondition -->
-        <test-method status="PASS" signature="CRCMyfrescnow(java.lang.String)[pri:3, instance:scripts.crc.Crc_Test@32709393]" name="CRCMyfrescnow" duration-ms="36027" started-at="2021-12-17T17:45:36 IST" data-provider="logindataset" finished-at="2021-12-17T17:46:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[×
-check_circle
-Client profile added successfully]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-            <line>
-              <![CDATA[pass: element is visible ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CRCMyfrescnow -->
-        <test-method status="PASS" signature="postcondition(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@32709393]" name="postcondition" is-config="true" duration-ms="2" started-at="2021-12-17T17:46:12 IST" finished-at="2021-12-17T17:46:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CRCMyfrescnow status=SUCCESS method=Crc_Test.CRCMyfrescnow(java.lang.String)[pri:3, instance:scripts.crc.Crc_Test@32709393] output=pass: element is visible ]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:ExtentReportListener.Extentreporter@4b4523f8]" name="endReport" is-config="true" duration-ms="3" started-at="2021-12-21T14:41:26 IST" finished-at="2021-12-21T14:41:26 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postcondition -->
-      </class> <!-- scripts.crc.Crc_Test -->
+        </test-method> <!-- endReport -->
+      </class> <!-- ExtentReportListener.Extentreporter -->
     </test> <!-- ChromeTest1-Desktop -->
   </suite> <!-- Suite -->
 </testng-results>

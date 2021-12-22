@@ -5,13 +5,9 @@
     <classes>
       <class name="scripts.crc.Crc_Test">
         <methods>
-          <include name="CRCMyfrescnow"/>
           <include name="postcondition"/>
-          <include name="CRCMysciq"/>
           <include name="precondition"/>
-          <include name="CRC1"/>
-          <include name="CRCPrgud"/>
-          <include name="CRCIq"/>
+          <include name="CRCSamplereport"/>
         </methods>
       </class> <!-- scripts.crc.Crc_Test -->
     </classes>
