@@ -78,6 +78,7 @@ public class ImportCreditreport_MyfreeScorenow extends login
 		elementvisibility(importreportnowbtn);
 		Assert.assertTrue(importreportnowbtn.isEnabled(), "import report button not exists");
 		System.out.println("import report button exists");
+		Thread.sleep(3000);
 		importreportnowbtn.click();
 		
 		elementvisibility(choosesuptpvdrbtn);

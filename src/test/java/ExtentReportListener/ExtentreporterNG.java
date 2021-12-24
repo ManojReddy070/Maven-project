@@ -1,77 +1,84 @@
 package ExtentReportListener;
 
 import java.io.File;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
 
-import org.testng.IReporter;
-import org.testng.IResultMap;
-import org.testng.ISuite;
-import org.testng.ISuiteResult;
-import org.testng.ITestContext;
+import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.xml.XmlSuite;
+import org.testng.SkipException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExtentreporterNG implements IReporter
-{
-		private ExtentReports extent;
-
-		public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-				String outputDirectory) {
-			extent = new ExtentReports(outputDirectory + File.separator
-					+ "Extent.html", true);
-
-			for (ISuite suite : suites) {
-				Map<String, ISuiteResult> result = suite.getResults();
-
-				for (ISuiteResult r : result.values()) {
-					ITestContext context = r.getTestContext();
-
-					buildTestNodes(context.getPassedTests(), LogStatus.PASS);
-					buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
-					buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
-				}
+public class ExtentreporterNG
+{	
+		ExtentReports extent;
+		ExtentTest logger;
+			
+		@BeforeTest
+		public void startReport()
+		{
+			//location of the report
+			extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/extentReport.html", true);
+			
+			//extent.addSystemInfo("Environment","Environment Name")
+	          extent.addSystemInfo("Host Name", "localhost");
+	          extent.addSystemInfo("Environment", "QA");
+	          extent.addSystemInfo("User Name", "ABC");
+	          extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+		}
+			
+		@Test
+		public void passTest(){
+			logger = extent.startTest("passTest");
+			Assert.assertTrue(true);
+			//To generate the log when the test case is passed
+			logger.log(LogStatus.PASS, "Test Case Passed is passTest");
+		}
+		
+		@Test
+		public void passTest1(){
+			logger = extent.startTest("passTest1");
+			Assert.assertTrue(true);
+			//To generate the log when the test case is passed
+			logger.log(LogStatus.PASS, "Test Case Passed is passTest");
+		}
+		
+//		@Test
+		public void failTest(){
+			logger = extent.startTest("failTest");
+			Assert.assertTrue(false);
+			logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
+		}
+		
+//		@Test
+		public void skipTest(){
+			logger = extent.startTest("skipTest");
+			throw new SkipException("Skipping - This is not ready for testing ");
+		}
+		
+		@AfterMethod
+		public void getResult(ITestResult result){
+			if(result.getStatus() == ITestResult.FAILURE){
+				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
+				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
+			}else if(result.getStatus() == ITestResult.SKIP){
+				logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 			}
-
-			extent.flush();
-			extent.close();
+			// ending test
+			//endTest(logger) : It ends the current test and prepares to create HTML report
+			extent.endTest(logger);
 		}
-
-		private void buildTestNodes(IResultMap tests, LogStatus status) {
-			ExtentTest test;
-
-			if (tests.size() > 0) {
-				for (ITestResult result : tests.getAllResults()) {
-					test = extent.startTest(result.getMethod().getMethodName());
-
-					test.setStartedTime(getTime(result.getStartMillis()));
-					test.setEndedTime(getTime(result.getEndMillis()));
-
-					for (String group : result.getMethod().getGroups())
-						test.assignCategory(group);
-
-					if (result.getThrowable() != null) {
-						test.log(status, result.getThrowable());
-					} else {
-						test.log(status, "Test " + status.toString().toLowerCase()
-								+ "ed");
-					}
-
-					extent.endTest(test);
-				}
-			}
-		}
-		private Date getTime(long millis) {
-			Calendar calendar = Calendar.getInstance();
-			calendar.setTimeInMillis(millis);
-			return calendar.getTime();
-		}
-}
-
-
+		@AfterTest
+		public void endReport(){
+			// writing everything to document
+			//flush() - to write or update test information to your report. 
+	                extent.flush();
+	                //close() - To close all the operation
+	               extent.close();
+	    }
+	}

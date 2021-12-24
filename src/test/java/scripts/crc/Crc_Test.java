@@ -4,6 +4,9 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
+
 import generic.BaseTestCrc;
 import pom.Addnewclient;
 import pom.ClientDeletion;
@@ -34,6 +37,7 @@ public class Crc_Test extends BaseTestCrc
 	@Test(dataProvider="logindataset",priority = 1)
 	public void CRCSamplereport(String data1) throws InterruptedException
 	{
+		logger = extent.startTest("CRCSamplereport");
 		login login=new login (driver);
 		login.loginScript(data1);
 		
@@ -42,9 +46,11 @@ public class Crc_Test extends BaseTestCrc
 	
 	ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
 	importSamplereport.importSamplereport(data1);
+	
+	logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 	}
 
-//	@Test(dataProvider="logindataset",priority = 1)
+//	@Test(dataProvider="logindataset",priority = 2)
 		public void CRCIq(String data1) throws InterruptedException
 		{
 			login login=new login (driver);
@@ -72,7 +78,7 @@ public class Crc_Test extends BaseTestCrc
 
 		}
 	
-//		@Test(dataProvider="logindataset",priority = 2)
+//		@Test(dataProvider="logindataset",priority = 3)
 		public void CRCMysciq(String data3) throws InterruptedException
 		{
 			login login=new login (driver);
@@ -85,9 +91,10 @@ public class Crc_Test extends BaseTestCrc
 		importMyscoreiq.importMyScoreIQ(data3);
 		
 		}
-//		@Test(dataProvider="logindataset",priority = 3)
+		@Test(dataProvider="logindataset",priority = 4)
 		public void CRCMyfrescnow(String data4) throws InterruptedException
 		{
+			logger = extent.startTest("CRCMyfrescnow");
 			login login=new login (driver);
 			login.loginScript(data4);
 			
@@ -96,10 +103,10 @@ public class Crc_Test extends BaseTestCrc
 			
 		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
 		importMyfreescorenow.importMyfreescorenow(data4);
-		
+		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		}
 		
-//		@Test(dataProvider="logindataset",priority = 4)
+//		@Test(dataProvider="logindataset",priority = 5)
 		public void CRC1(String data5) throws InterruptedException
 		{
 			login login=new login (driver);

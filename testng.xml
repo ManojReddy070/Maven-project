@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-
-	<listeners>
-		<listener class-name="ExtentReportListener.ExtentreporterNG" />
-	</listeners>
-
  <test thread-count="1" name="ChromeTest1-Desktop">
   <parameter name="url" value="https://ui-test.creditrepaircloud.com/"/>
   <parameter name="notifications" value="--disable-notifications"></parameter>
@@ -14,7 +9,7 @@
     <parameter name="browser" value="chrome"></parameter>
     <parameter name="email" value="manojreddy15@yopmail.com"></parameter>
     <classes>
-      <class name="Scripts.Crc_Test"/>
+      <class name="scripts.crc.Crc_Test"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Suite --> 
