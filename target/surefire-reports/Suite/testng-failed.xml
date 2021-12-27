@@ -11,9 +11,10 @@
     <classes>
       <class name="scripts.crc.Crc_Test">
         <methods>
-          <include name="CRCSamplereport" invocation-numbers="0"/>
-          <include name="postcondition"/>
+          <include name="endReport"/>
           <include name="precondition"/>
+          <include name="getResult"/>
+          <include name="CRCIq" invocation-numbers="0"/>
         </methods>
       </class> <!-- scripts.crc.Crc_Test -->
     </classes>

@@ -39,15 +39,7 @@ public class ExtentreporterNG
 			//To generate the log when the test case is passed
 			logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		}
-		
-		@Test
-		public void passTest1(){
-			logger = extent.startTest("passTest1");
-			Assert.assertTrue(true);
-			//To generate the log when the test case is passed
-			logger.log(LogStatus.PASS, "Test Case Passed is passTest");
-		}
-		
+				
 //		@Test
 		public void failTest(){
 			logger = extent.startTest("failTest");
