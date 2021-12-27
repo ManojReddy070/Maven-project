@@ -25,12 +25,10 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class BaseTestCrc implements Autoconstantcrc 
-{
-	
-	public ExtentReports extent;
-	public ExtentTest logger;
-	
+import ExtentReportListener.ExtentreporterNG;
+
+public class BaseTestCrc extends ExtentreporterNG implements Autoconstantcrc 
+{	
 	public WebDriver driver;
 	@DataProvider(name="logindataset")
 	public String[] readJson2() throws Throwable, ParseException
@@ -75,14 +73,6 @@ public class BaseTestCrc implements Autoconstantcrc
 @Parameters({"browser","url","WindowSize", "Execution-Type", "notifications"})
 public void precondition(String browserName, String url, String WindowSize, String ET, String notifications) throws InterruptedException
 {
-	extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/extentReport.html", true);
-	
-	//extent.addSystemInfo("Environment","Environment Name")
-      extent.addSystemInfo("Host Name", "localhost");
-      extent.addSystemInfo("Environment", "QA");
-      extent.addSystemInfo("User Name", "CRC");
-      extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
-	
 	System.out.println("Browser Name is: "+browserName);
 	if(browserName.equalsIgnoreCase("chrome"))
 	{
@@ -147,27 +137,5 @@ public void precondition(String browserName, String url, String WindowSize, Stri
 //		UtilityCrc.getphoto(driver, name);
 //	//driver.close();
 //}
-@AfterMethod
-public void getResult(ITestResult result){
-	if(result.getStatus() == ITestResult.FAILURE){
-		logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
-		logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
-	}else if(result.getStatus() == ITestResult.SKIP){
-		logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
-	}
-	// ending test
-	//endTest(logger) : It ends the current test and prepares to create HTML report
-	extent.endTest(logger);
-}
-@AfterTest
-public void endReport(){
-	// writing everything to document
-	//flush() - to write or update test information to your report. 
-            extent.flush();
-            //close() - To close all the operation
-           extent.close();
-}
-
-
 }
 

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 156.627 s <<< FAILURE! - in TestSuite
-scripts.crc.Crc_Test.CRCIq[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15](1)  Time elapsed: 54.59 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 416.642 s <<< FAILURE! - in TestSuite
+scripts.crc.Crc_Test.CRCsmartcredit[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15](1)  Time elapsed: 63.236 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at scripts.crc.Crc_Test.CRCIq(Crc_Test.java:64)
+	at scripts.crc.Crc_Test.CRCsmartcredit(Crc_Test.java:121)
 

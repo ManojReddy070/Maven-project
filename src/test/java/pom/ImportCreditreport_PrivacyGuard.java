@@ -14,7 +14,7 @@ public class ImportCreditreport_PrivacyGuard extends login
 	@FindBy(xpath = "//a[@class='green-btn-lined2 inline-block text-center h-40 p-t-7 m-r-24 green-bg text-white']")
 	public WebElement importauditbtn;
 	
-	@FindBy(xpath = "//a[@class='green-btn et-padding btnsubmit h-40 p-t-7']")
+	@FindBy(xpath = "//a[@class='green-btn et-padding btnsubmit']")
 	public WebElement importreportnowbtn;
 	
 	@FindBy(xpath = "(//span[.='Choose Supported Provider'])[5]")

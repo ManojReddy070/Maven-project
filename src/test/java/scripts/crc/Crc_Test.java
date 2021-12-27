@@ -47,7 +47,6 @@ public class Crc_Test extends BaseTestCrc
 	ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
 	importSamplereport.importSamplereport(data1);
 	
-	logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 	}
 
 	@Test(dataProvider="logindataset",priority = 2)
@@ -62,9 +61,7 @@ public class Crc_Test extends BaseTestCrc
 		
 		ImportCreditreport_Identityiq importidentityiq=new ImportCreditreport_Identityiq (driver);
 		importidentityiq.importidentityiq(data1);
-		
-		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
-		
+			
 		}
 
 //		@Test(dataProvider="logindataset",priority = 5)
@@ -79,7 +76,6 @@ public class Crc_Test extends BaseTestCrc
 		
 		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
 		importPrivacyguard.importPrivacyGuard(data2);
-		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		}
 	
 //		@Test(dataProvider="logindataset",priority = 3)
@@ -94,10 +90,9 @@ public class Crc_Test extends BaseTestCrc
 		
 		ImportCreditreport_MyScoreIQ importMyscoreiq=new ImportCreditreport_MyScoreIQ (driver);
 		importMyscoreiq.importMyScoreIQ(data3);
-		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		
 		}
-//		@Test(dataProvider="logindataset",priority = 4)
+		@Test(dataProvider="logindataset",priority = 4)
 		public void CRCMyfrescnow(String data4) throws InterruptedException
 		{
 			logger = extent.startTest("CRCMyfrescnow");
@@ -109,13 +104,13 @@ public class Crc_Test extends BaseTestCrc
 			
 		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
 		importMyfreescorenow.importMyfreescorenow(data4);
-		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
+		
 		}
 		
-//		@Test(dataProvider="logindataset",priority = 5)
-		public void CRC1(String data5) throws InterruptedException
+		@Test(dataProvider="logindataset",priority = 5)
+		public void CRCsmartcredit(String data5) throws InterruptedException
 		{
-			logger = extent.startTest("CRC1");
+			logger = extent.startTest("CRCsmartcredit");
 			login login=new login (driver);
 			login.loginScript(data5);
 			
@@ -124,7 +119,6 @@ public class Crc_Test extends BaseTestCrc
 			
 		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
 		importSmartcredit.importSmartCredit(data5);
-		logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		}
 //		ImportCreditreport_Creditheroscore importCreditheroscore=new ImportCreditreport_Creditheroscore (driver);
 //		importCreditheroscore.importChs(data);

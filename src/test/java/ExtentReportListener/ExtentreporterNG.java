@@ -16,61 +16,73 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentreporterNG
 {	
-		ExtentReports extent;
-		ExtentTest logger;
-			
+		protected ExtentReports extent;
+		protected ExtentTest logger;
+		
 		@BeforeTest
 		public void startReport()
 		{
-			//location of the report
-			extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/extentReport.html", true);
-			
+
+			extent = new ExtentReports (System.getProperty("user.dir") +"/test-output/ExtentReport.html", true);
 			//extent.addSystemInfo("Environment","Environment Name")
-	          extent.addSystemInfo("Host Name", "localhost");
-	          extent.addSystemInfo("Environment", "QA");
-	          extent.addSystemInfo("User Name", "ABC");
-	          extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+			extent
+			.addSystemInfo("Host Name", "CRC")
+			.addSystemInfo("Environment", "Automation Testing")
+			.addSystemInfo("User Name", "Tester");
+			extent.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 		}
-			
-		@Test
-		public void passTest(){
+		
+		//@Test
+		public void passTest()
+		{
+
 			logger = extent.startTest("passTest");
 			Assert.assertTrue(true);
-			//To generate the log when the test case is passed
 			logger.log(LogStatus.PASS, "Test Case Passed is passTest");
 		}
-				
-//		@Test
-		public void failTest(){
+		
+		//@Test
+		public void failTest()
+		{
 			logger = extent.startTest("failTest");
 			Assert.assertTrue(false);
 			logger.log(LogStatus.PASS, "Test Case (failTest) Status is passed");
 		}
-		
-//		@Test
-		public void skipTest(){
+
+		//@Test
+		public void skipTest()
+		{
 			logger = extent.startTest("skipTest");
 			throw new SkipException("Skipping - This is not ready for testing ");
 		}
 		
 		@AfterMethod
-		public void getResult(ITestResult result){
-			if(result.getStatus() == ITestResult.FAILURE){
+		public void getResult(ITestResult result)
+		{
+			if(result.getStatus() == ITestResult.FAILURE)
+			{
 				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
 				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());
-			}else if(result.getStatus() == ITestResult.SKIP){
+			}
+			else if(result.getStatus() == ITestResult.SKIP)
+			{
 				logger.log(LogStatus.SKIP, "Test Case Skipped is "+result.getName());
 			}
-			// ending test
-			//endTest(logger) : It ends the current test and prepares to create HTML report
+			else if(result.getStatus() == ITestResult.SUCCESS)
+			{
+				logger.log(LogStatus.PASS, "Test Case Success is "+result.getName());
+			}
+			
+
 			extent.endTest(logger);
 		}
+		
 		@AfterTest
-		public void endReport(){
-			// writing everything to document
-			//flush() - to write or update test information to your report. 
-	                extent.flush();
-	                //close() - To close all the operation
-	               extent.close();
-	    }
+		public void endReport()
+		{
+
+			extent.flush();
+			extent.close();
+		}
 	}
+
