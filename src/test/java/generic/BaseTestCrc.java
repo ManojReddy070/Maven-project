@@ -135,7 +135,7 @@ public void precondition(String browserName, String url, String WindowSize, Stri
 //	int status = r.getStatus();
 //	if(status==2)
 //		UtilityCrc.getphoto(driver, name);
-//	//driver.close();
+//	driver.close();
 //}
 }
 

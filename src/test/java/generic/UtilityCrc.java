@@ -30,18 +30,18 @@ public class UtilityCrc
 		return d;
 	}
 
-	public static void getphoto(WebDriver driver, String name)
-	{
-		TakesScreenshot shot=(TakesScreenshot)driver;
-		File src = shot.getScreenshotAs(OutputType.FILE);
-		File dest=new File("./src/screenshots/"+name+".png");
-		try 
-		{
-			FileUtils.copyFile(src, dest);
-		} 
-		catch (IOException e) 
-		{
-
-		}
-	}
+//	public static void getphoto(WebDriver driver, String name)
+//	{
+//		TakesScreenshot shot=(TakesScreenshot)driver;
+//		File src = shot.getScreenshotAs(OutputType.FILE);
+//		File dest=new File("./src/screenshots/"+name+".png");
+//		try 
+//		{
+//			FileUtils.copyFile(src, dest);
+//		} 
+//		catch (IOException e) 
+//		{
+//
+//		}
+//	}
 }
