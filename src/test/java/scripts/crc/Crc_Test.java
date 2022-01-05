@@ -34,25 +34,25 @@ public class Crc_Test extends BaseTestCrc
 //		importSamplereport.importSamplereport(data);
 //	}
 	
-	@Test(dataProvider="logindataset",priority = 1)
-	public void CRCSamplereport(String data1) throws InterruptedException
-	{
-		logger = extent.startTest("CRCSamplereport");
-		login login=new login (driver);
-		login.loginScript(data1);
-		
-		Addnewclient Addclient=new Addnewclient (driver);
-		Addclient.Addclient(data1);
-	
-	ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
-	importSamplereport.importSamplereport(data1);
-	
-	}
+//	@Test(dataProvider="logindataset",priority = 1)
+//	public void CRCSamplereport(String data1) throws InterruptedException
+//	{
+//		logger = extent.startTest("CRCSamplereport");
+//		login login=new login (driver);
+//		login.loginScript(data1);
+//		
+//		Addnewclient Addclient=new Addnewclient (driver);
+//		Addclient.Addclient(data1);
+//	
+//	ImportCreditreport_Samplereport importSamplereport=new ImportCreditreport_Samplereport (driver);
+//	importSamplereport.importSamplereport(data1);
+//	
+//	}
 
 //		@Test(dataProvider="logindataset",priority = 2)
-//		public void CRCIq(String data1) throws InterruptedException
+//		public void CRCIQ(String data1) throws InterruptedException
 //		{
-//			logger = extent.startTest("CRCIq");
+//			logger = extent.startTest("CRCIQ");
 //			login login=new login (driver);
 //			login.loginScript(data1);
 //			
@@ -64,19 +64,19 @@ public class Crc_Test extends BaseTestCrc
 //			
 //		}
 
-//		@Test(dataProvider="logindataset",priority = 5)
-//		public void CRCPrgud(String data2) throws InterruptedException
-//		{
-//			logger = extent.startTest("CRCPrgud");
-//			login login=new login (driver);
-//			login.loginScript(data2);
-//			
-//			Addnewclient Addclient=new Addnewclient (driver);
-//			Addclient.Addclient(data2);
-//		
-//		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
-//		importPrivacyguard.importPrivacyGuard(data2);
-//		}
+		@Test(dataProvider="logindataset",priority = 5)
+		public void CRCPrgud(String data2) throws InterruptedException
+		{
+			logger = extent.startTest("CRCPrgud");
+			login login=new login (driver);
+			login.loginScript(data2);
+			
+			Addnewclient Addclient=new Addnewclient (driver);
+			Addclient.Addclient(data2);
+		
+		ImportCreditreport_PrivacyGuard importPrivacyguard=new ImportCreditreport_PrivacyGuard (driver);
+		importPrivacyguard.importPrivacyGuard(data2);
+		}
 	
 //		@Test(dataProvider="logindataset",priority = 3)
 //		public void CRCMysciq(String data3) throws InterruptedException
@@ -92,34 +92,33 @@ public class Crc_Test extends BaseTestCrc
 //		importMyscoreiq.importMyScoreIQ(data3);
 //		
 //		}
-		@Test(dataProvider="logindataset",priority = 4)
-		public void CRCMyfrescnow(String data4) throws InterruptedException
-		{
-			logger = extent.startTest("CRCMyfrescnow");
-			login login=new login (driver);
-			login.loginScript(data4);
-			
-			Addnewclient Addclient=new Addnewclient (driver);
-			Addclient.Addclient(data4);
-			
-		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
-		importMyfreescorenow.importMyfreescorenow(data4);
+//		@Test(dataProvider="logindataset",priority = 4)
+//		public void CRCMyfrescnow(String data4) throws InterruptedException
+//		{
+//			logger = extent.startTest("CRCMyfrescnow");
+//			login login=new login (driver);
+//			login.loginScript(data4);
+//			
+//			Addnewclient Addclient=new Addnewclient (driver);
+//			Addclient.Addclient(data4);
+//			
+//		ImportCreditreport_MyfreeScorenow importMyfreescorenow=new ImportCreditreport_MyfreeScorenow (driver);
+//		importMyfreescorenow.importMyfreescorenow(data4);	
+//		}	
 		
-		}
-		
-		@Test(dataProvider="logindataset",priority = 5)
-		public void CRCsmartcredit(String data5) throws InterruptedException
-		{
-			logger = extent.startTest("CRCsmartcredit");
-			login login=new login (driver);
-			login.loginScript(data5);
-			
-			Addnewclient Addclient=new Addnewclient (driver);
-			Addclient.Addclient(data5);
-			
-		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
-		importSmartcredit.importSmartCredit(data5);
-		}
+//		@Test(dataProvider="logindataset",priority = 5)
+//		public void CRCsmartcredit(String data5) throws InterruptedException
+//		{
+//			logger = extent.startTest("CRCsmartcredit");
+//			login login=new login (driver);
+//			login.loginScript(data5);
+//			
+//			Addnewclient Addclient=new Addnewclient (driver);
+//			Addclient.Addclient(data5);
+//			
+//		ImportCreditreport_SmartCredit importSmartcredit=new ImportCreditreport_SmartCredit (driver);
+//		importSmartcredit.importSmartCredit(data5);
+//		}
 //		ImportCreditreport_Creditheroscore importCreditheroscore=new ImportCreditreport_Creditheroscore (driver);
 //		importCreditheroscore.importChs(data);
 

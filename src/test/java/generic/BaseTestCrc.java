@@ -127,15 +127,5 @@ public void precondition(String browserName, String url, String WindowSize, Stri
 		System.out.println(size);
 	}
 }
-
-//@AfterMethod
-//public void postcondition(ITestResult r)
-//{
-//	String name = r.getMethod().getMethodName();
-//	int status = r.getStatus();
-//	if(status==2)
-//		UtilityCrc.getphoto(driver, name);
-//	driver.close();
-//}
 }
 

@@ -14,9 +14,8 @@
           <include name="endReport"/>
           <include name="getResult"/>
           <include name="precondition"/>
-          <include name="CRCsmartcredit"/>
+          <include name="CRCPrgud" invocation-numbers="0"/>
           <include name="startReport"/>
-          <include name="CRCMyfrescnow"/>
         </methods>
       </class> <!-- scripts.crc.Crc_Test -->
     </classes>
