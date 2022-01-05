@@ -1,11 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 95.333 s <<< FAILURE! - in TestSuite
-scripts.crc.Crc_Test.CRCPrgud[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15](1)  Time elapsed: 67.751 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 95.563 s <<< FAILURE! - in TestSuite
+scripts.crc.Crc_Test.CRCPrgud[uiux@yopmail.com,Test@1234,Manoj,ReddyA,manojreddy,daniel@credit-aid.com,flatop63,(234) 567-5432,3944,daniel@credit-aid.com,flatop63,(234) 567-5432,danielrosen,flatop63,(234) 567-5432,3944,dr@credit-aid.com,flatop63,(234) 567-5432,manojreddy15](1)  Time elapsed: 66.283 s  <<< FAILURE!
 java.lang.AssertionError: null
 	at scripts.crc.Crc_Test.CRCPrgud(Crc_Test.java:78)
-
-scripts.crc.Crc_Test.getResult[[TestResult name=CRCPrgud status=FAILURE method=Crc_Test.CRCPrgud(java.lang.String)[pri:5, instance:scripts.crc.Crc_Test@57855c9a] output=pass: element is visible ]](0)  Time elapsed: 67.754 s  <<< FAILURE!
-java.lang.NullPointerException
 

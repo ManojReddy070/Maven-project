@@ -29,7 +29,7 @@ import ExtentReportListener.ExtentreporterNG;
 
 public class BaseTestCrc extends ExtentreporterNG implements Autoconstantcrc 
 {	
-	public WebDriver driver;
+	public static WebDriver driver;
 	@DataProvider(name="logindataset")
 	public String[] readJson2() throws Throwable, ParseException
 	{	

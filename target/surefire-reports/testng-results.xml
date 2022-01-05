@@ -73,16 +73,16 @@ Client profile added successfully]]>
       <![CDATA[fail: element is not visible]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="94647" started-at="2022-01-05T12:20:07 IST" finished-at="2022-01-05T12:21:41 IST">
+  <suite name="Suite" duration-ms="94749" started-at="2022-01-05T14:58:15 IST" finished-at="2022-01-05T14:59:50 IST">
     <groups>
     </groups>
-    <test name="ChromeTest1-Desktop" duration-ms="94647" started-at="2022-01-05T12:20:07 IST" finished-at="2022-01-05T12:21:41 IST">
+    <test name="ChromeTest1-Desktop" duration-ms="94749" started-at="2022-01-05T14:58:15 IST" finished-at="2022-01-05T14:59:50 IST">
       <class name="scripts.crc.Crc_Test">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="startReport" is-config="true" duration-ms="146" started-at="2022-01-05T12:20:07 IST" finished-at="2022-01-05T12:20:07 IST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="startReport" is-config="true" duration-ms="190" started-at="2022-01-05T14:58:15 IST" finished-at="2022-01-05T14:58:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="precondition" is-config="true" duration-ms="26078" started-at="2022-01-05T12:20:07 IST" finished-at="2022-01-05T12:20:33 IST">
+        <test-method status="PASS" signature="precondition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="precondition" is-config="true" duration-ms="27393" started-at="2022-01-05T14:58:15 IST" finished-at="2022-01-05T14:58:43 IST">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@ Client profile added successfully]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method status="FAIL" signature="CRCPrgud(java.lang.String)[pri:5, instance:scripts.crc.Crc_Test@57855c9a]" name="CRCPrgud" duration-ms="67797" started-at="2022-01-05T12:20:33 IST" data-provider="logindataset" finished-at="2022-01-05T12:21:41 IST">
+        <test-method status="FAIL" signature="CRCPrgud(java.lang.String)[pri:5, instance:scripts.crc.Crc_Test@57855c9a]" name="CRCPrgud" duration-ms="66347" started-at="2022-01-05T14:58:43 IST" data-provider="logindataset" finished-at="2022-01-05T14:59:49 IST">
           <params>
             <param index="0">
               <value>
@@ -241,7 +241,7 @@ Client profile added successfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- CRCPrgud -->
-        <test-method status="FAIL" signature="getResult(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="getResult" is-config="true" duration-ms="7" started-at="2022-01-05T12:21:41 IST" finished-at="2022-01-05T12:21:41 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="getResult" is-config="true" duration-ms="221" started-at="2022-01-05T14:59:49 IST" finished-at="2022-01-05T14:59:49 IST">
           <params>
             <param index="0">
               <value>
@@ -249,55 +249,10 @@ Client profile added successfully]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at ExtentReportListener.ExtentreporterNG.getphoto(ExtentreporterNG.java:97)
-at ExtentReportListener.ExtentreporterNG.getResult(ExtentreporterNG.java:71)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="endReport" is-config="true" duration-ms="516" started-at="2022-01-05T12:21:41 IST" finished-at="2022-01-05T12:21:41 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:scripts.crc.Crc_Test@57855c9a]" name="endReport" is-config="true" duration-ms="515" started-at="2022-01-05T14:59:49 IST" finished-at="2022-01-05T14:59:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

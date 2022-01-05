@@ -22,6 +22,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import generic.BaseTestCrc;
 import generic.UtilityCrc;
 import scripts.crc.Crc_Test;
 
@@ -29,8 +30,6 @@ public class ExtentreporterNG
 {	
 		protected ExtentReports extent;
 		protected ExtentTest logger;
-		public ExtentTest extentTest;
-		private WebDriver driver;
 		
 		@BeforeTest
 		public void startReport()
@@ -68,7 +67,7 @@ public class ExtentreporterNG
 			if(result.getStatus() == ITestResult.FAILURE)
 			{
 				logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getName());
-				ExtentreporterNG.getphoto(driver, "name");
+				logger.log(LogStatus.FAIL, logger.addScreenCapture(ExtentreporterNG.getphoto(BaseTestCrc.driver, "CRC"))); 
 			}
 			else if(result.getStatus() == ITestResult.SKIP)
 			{
